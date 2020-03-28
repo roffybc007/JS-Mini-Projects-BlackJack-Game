@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='style.css' rel="stylesheet">
+    <link rel="stylesheet" href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <title>JS On Drugs</title>
+</head>
+<body>
+    
+    <div class="container-1">
+        <h2>Challange 1:Your age in Days</h2>
+        <div class='flex-box-container-1' >
+            <div>
+                <button class='btn btn-primary' onclick="ageInDays()">Click Me</button>
+            </div>
+            <div>
+                <button class='btn btn-danger' onclick="reset()">Reset</button>
+            </div>
+        </div>
+
+
+
+         <div class="flex-box-container-1">
+             <div id='flex-box-result'></div>
+        </div>
+    </div>
+
+    <div class='container-2'>
+        <h2>Challange 2:Cat Generator</h2>
+        <button class='btn btn-success' id='cat-generator' onclick="generateCat()">Generate Cat</button>
+        
+        <div class='flex-box-container-2' id='flex-cat-gen'>
+
+        </div>
+    </div>
+
+    <script src='fortrainingbutjs.js'></script>
+
+
+    <div class='container-3'>
+        <h2>Challange 3:Rock,Paper,Scissors</h2>
+        <div class='flex-box-rps' id='flex-box-rps-div'>
+            <img id='rock' src="http://images.clipartpanda.com/rock-clipart-clipart-harvestable-resources-rock.png" height=150 width=150 alt="" onclick="rpsGame(this)">
+            <img id= 'paper' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMsAAAD4CAMAAAB1y+ICAAAAt1BMVEX///8Ah9oAAADl5eXi4uIkmd8Aj9yOxezL4fXh7vm42vKYxuxgsOXa7fmcm5r8//9JqOMAi9uBv+rn8/uy1PHR5/fv+f1vt+g2oOHC4PWezO5XqeOp0/DZFwreTUiSkZAAT3sKCwzIMz8gWX7TQER+h41edYc9ZYJNSkmJNDCGGBJhXl1wcHGzs7PT09MaGxzw8PA/P0B2gYu14vt5hIzDw8NOboRpeYia1PeKjo93d3goXYDm/P8zx6NkAAADb0lEQVR4nO3dXVMaMRTGcRpp6SvY0tLSGhRcFWVbF1SU6vf/XF1mgGE4J+PYC/Lk5Pld7Zy7/5g0nQGyjQYRZe+gmZqDUMrYpWesp0xc2RYur+QMSOkmWkqljgf+v1br3kxcpUwP3LEyRW85dtqWYUtsbMHEFkxswcQWTM+23LWb68fUW8r6/9K/V8+JtzTdcOjcapp4y5+6ZWikpXFdr7Fy9Zx6S1VON/8MpN6yLdWW09fSyCtDIKcZtFhaY2yJiy2Y2IIph5bHQ2nklSGQx0DLyRtp5JUhkJPgGuvsWq4xMQSSxX5hS1xswcQWTKGWi49S4ZUhkIvQuf9ZGnllCOQF535n4Pd/mL9AFvuFLXGxBRNbMIVa5l+kwitDIPPQuf9KGnllCCR07i963V1PA/8khkB6iwz2C1viYgsmtmAKnvstqfDKEEgO5/7ZJ2nglSGQswz2C1viYgsmtmAKtdx/FW4KfySnQO4zOPdnb4V+4ftyCmSWwX5hS1xswcQWTMFz/71Qn/s3cgokh3Pf0t/F0n5hS1xswcQWTKGW22/SwCtDILcZnPvnP4WHwj/IKZDzDPYLW+JiCya2YAq1nHXf7eoOvBwC6YY+RzZ17n8Q6nO/JadAeO5jYgsmtmDKoWXR6e1afm9cDIF0Qt8bt3Tuz79LhVeGQEK/r7S0XzYt7b/r6/qSb5k6t3lOvMXSfX2WWiytMSN7f/3r68bmF+Op/k7c0rlv6V4Fk+f+FrbsD1swsQVTDi0p3tcXuqf38Yc08soQSOgeRUtrjC1xsQUTWzDl0GLpfn5LLZbWGFviYgsmtmDKoeXil3BY+EM5BRK8c1j5TCDVzywsrTG2xMUWTGzBlEOLpc/EbZ378ksaqX6HxNJ+YUtcbMHEFkx81wAmS+8a4J3DmNiCiS2Ycmix9Jt3S+e+pTsiLO0XtsTFFkxswRS8c/hIKrwyBJLDncOzvrC8c1hOgfBdA5jYgoktmHJosfQuG0vnPt81EFcOe58tcbEFUw4tfNdAXHzXAKbn9n5VTjdZqbdcO+fK1XPiLZbu62vWLc5IS6Os19j6wr7UWxp37eb6MdUWS++st3Tuz1tS4ZUhkND3LS2e+9vYsj9swcQWTPZbKjdRpugtE1fp47ItXF7JGZBS/QPUxi4949AfrGqmRl1gRJSXf2mMYMfqZSeQAAAAAElFTkSuQmCC"  height=150 width=150 alt="" onclick="rpsGame(this)">
+            <img id= 'scissors' src="https://previews.123rf.com/images/refluo/refluo1705/refluo170500029/78249966-two-fingers-gesture.jpg"  height=150 width=150 alt="" onclick="rpsGame(this)">
+
+
+        </div>
+
+
+
+
+    </div>
+    
+    <div class='container-5'>
+        
+        <h2>Blackjack</h2>
+        <h3><span id='blackjack-result'>Let's Play</span></h3>
+
+        <div class='flex-blackjack-row-1'>
+            <div id='your-box'>
+                <h2>You: <span id='your-blackjack-result'>0</span></h2>
+            </div>
+
+            <div id='dealer-box'>
+                <h2>Dealer: <span id='dealer-blackjack-result'>0</span> </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class='flex-blackjack-row-2'>
+            <div>
+
+                <button class='btn-lg btn-primary mr-2' id='blackjack-hit-button'>Hit</button>
+                <button class='btn-lg btn-warning mr-2'  id='blackjack-stand-button'>Stand</button>
+                <button class='btn-lg btn-danger' id='blackjack-deal-button'>Deal</button>
+
+            </div>
+
+
+        </div>
+
+        <div class='flex-blackjack-row-3'>
+            <TABLE>
+                <tr>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Draws</th>
+                </tr>
+
+
+                <tr>
+                    <td><span id='wins'>0</span></td>
+                    <td><spawn id='losses'>0</spawn></td>
+                    <td><span id='draws'>0</span></td>
+
+
+                </tr>
+            </TABLE>
+
+
+
+        </div>
+    
+    
+    </div>
+
+    
+ 
+
+    
+        
+</body>
+</html>
